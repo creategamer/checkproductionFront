@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   server: {
     proxy: {
-      '/api': 'https://tempdelback.onrender.com',
+      '/api': 'https://productioncheckback-4.onrender.com/',
     },
   },
   plugins: [react()],
