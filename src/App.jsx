@@ -8,7 +8,7 @@ function App() {
 
 
   useEffect(() => {
-    axios.get('/api/jokes')
+    axios.get('https://productioncheckback.onrender.com/api/jokes')
       .then((res) => {
         setJokes(res.data)
       })
