@@ -6,9 +6,8 @@ import axios from "axios"
 function App() {
   const [jokes, setJokes] = useState([])
 
-
   useEffect(() => {
-    axios.get('/api/jokes')
+    axios.get('https://productioncheckback.onrender.com/api/jokes')
       .then((res) => {
         setJokes(res.data)
       })
